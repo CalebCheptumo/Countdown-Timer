@@ -4,7 +4,7 @@ const minutesEL = document.querySelector('.minutes')
 const secondsEL = document.querySelector('.seconds')
 
 
-const target = '7 May 2021'
+const target = '30 May 2022'
 
 function countdown(){
 const targetDate = new Date(target)
@@ -15,6 +15,10 @@ const hours =Math.floor(totalSeconds/3600)%24
 const minutes = Math.floor(totalSeconds/60)%60
 const seconds = Math.floor(totalSeconds)%60
 console.log(days,hours,minutes,seconds)
+daysEL.innerHTML= days
+hoursEL.innerHTML = hours
+minutesEL.innerHTML = minutes
+secondsEL.innerHTML = seconds
 }
 
 countdown()
