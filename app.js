@@ -16,9 +16,9 @@ const minutes = Math.floor(totalSeconds/60)%60
 const seconds = Math.floor(totalSeconds)%60
 console.log(days,hours,minutes,seconds)
 daysEL.innerHTML= days
-hoursEL.innerHTML = hours
-minutesEL.innerHTML = minutes
-secondsEL.innerHTML = seconds
+hoursEL.innerHTML = formatTime(hours)
+minutesEL.innerHTML = formatTime(minutes)
+secondsEL.innerHTML = formatTime(seconds)
 }
 
 
